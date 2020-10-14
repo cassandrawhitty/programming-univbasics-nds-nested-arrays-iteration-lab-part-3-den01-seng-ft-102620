@@ -8,10 +8,10 @@ def join_nested_strings(src)
       if (current_array[element_index].is_a? String)
         result_string += current_array[element_index] 
       end
+    element_index += 1
     end
-  element_index += 1
-  end
   row_index += 1
+  end
   result_string
 end
 
